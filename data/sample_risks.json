@@ -1,12 +1,87 @@
 {
-  "institution": "Example UK Secondary School",
-  "assessment_date": "2026-01-15",
-  "assessor": "Md Onik Mia",
+  "institution": "Example UK Primary School",
+  "sector": "primary_school",
+  "assessment_date": "2026-04-23",
+  "assessor": "Md Onik Mia (SCRPM Framework)",
+  "framework_version": "1.0",
+  "note": "Risk scenarios derived from DSIT (2024), NCSC (2020-2023), and ICO (2023) data sources used in dissertation research",
   "risks": [
-    {"id": "RISK-001", "description": "Ransomware attack encrypting student welfare records", "safeguarding_impact": 9, "data_sensitivity": 9, "likelihood": 7, "operational_impact": 8, "regulatory_exposure": 9, "category": "Malware", "notes": "Welfare records include DSL safeguarding files"},
-    {"id": "RISK-002", "description": "Phishing email targeting staff - student data exfiltration", "safeguarding_impact": 8, "data_sensitivity": 8, "likelihood": 8, "operational_impact": 5, "regulatory_exposure": 7, "category": "Social Engineering", "notes": "Staff clicked malicious link"},
-    {"id": "RISK-003", "description": "Unauthorised access to student medical and SEND records", "safeguarding_impact": 10, "data_sensitivity": 9, "likelihood": 4, "operational_impact": 3, "regulatory_exposure": 9, "category": "Access Control", "notes": "Former employee retains access"},
-    {"id": "RISK-004", "description": "School website defacement - reputational damage", "safeguarding_impact": 2, "data_sensitivity": 2, "likelihood": 6, "operational_impact": 7, "regulatory_exposure": 3, "category": "Web Security", "notes": "No student data at risk"},
-    {"id": "RISK-005", "description": "MIS system outage - inability to access attendance records", "safeguarding_impact": 4, "data_sensitivity": 5, "likelihood": 5, "operational_impact": 9, "regulatory_exposure": 4, "category": "Availability", "notes": "Safeguarding cross-check not possible during outage"}
+    {
+      "id": "RISK-001",
+      "description": "Ransomware attack encrypting pastoral and safeguarding databases",
+      "threat_severity": 5,
+      "resilience_deficit": 5,
+      "safeguarding_impact": 5,
+      "sector": "Primary School",
+      "category": "Ransomware",
+      "affected_systems": ["Pastoral database", "DSL referral system", "Attendance records", "SEN files"],
+      "notes": "DSIT (2024): ransomware incidents documented in schools. Schools have highest safeguarding obligations and weakest cyber resilience — the 'school vulnerability inversion' identified in dissertation Chapter 6.7. Primary school formal risk assessment rate: only 58% (DSIT 2025)."
+    },
+    {
+      "id": "RISK-002",
+      "description": "Phishing attack compromising staff email — pupil welfare records exposed",
+      "threat_severity": 4,
+      "resilience_deficit": 4,
+      "safeguarding_impact": 5,
+      "sector": "Primary School",
+      "category": "Phishing / Social Engineering",
+      "affected_systems": ["Staff email", "MIS system", "Pupil welfare records"],
+      "notes": "DSIT (2024): phishing affects 92% of primary schools (among breached). Single compromised account may expose pupil welfare data. ICO (2023): 215 education-sector enforcement cases 2020-2023, many involving pastoral data exposure."
+    },
+    {
+      "id": "RISK-003",
+      "description": "Unauthorised access by former employee to student SEND and medical records",
+      "threat_severity": 3,
+      "resilience_deficit": 5,
+      "safeguarding_impact": 5,
+      "sector": "Secondary School",
+      "category": "Unauthorised Access / Access Control",
+      "affected_systems": ["SEND database", "Medical records", "Pastoral notes"],
+      "notes": "Credential management failure. SEND and medical records are UK GDPR special category data. ICO enforcement cases document similar failures. DfE (2024) KCSIE requires prompt removal of access for leavers."
+    },
+    {
+      "id": "RISK-004",
+      "description": "MIS system outage preventing attendance monitoring and safeguarding cross-checks",
+      "threat_severity": 3,
+      "resilience_deficit": 4,
+      "safeguarding_impact": 4,
+      "sector": "Secondary School",
+      "category": "Availability / System Failure",
+      "affected_systems": ["MIS (SIMS/Arbor)", "Attendance system", "Parent communication"],
+      "notes": "Dissertation Chapter 6.2: MIS failure prevents statutory safeguarding cross-checks. No manual protocol backup documented. KCSIE (2024) duties persist regardless of IT system status."
+    },
+    {
+      "id": "RISK-005",
+      "description": "Third-party cloud provider breach exposing FE college learner data",
+      "threat_severity": 4,
+      "resilience_deficit": 3,
+      "safeguarding_impact": 3,
+      "sector": "FE College",
+      "category": "Supply Chain / Third-Party Risk",
+      "affected_systems": ["VLE (Moodle/Canvas)", "Learner records", "Apprenticeship data"],
+      "notes": "Jisc (2022): FE colleges increasingly dependent on cloud providers. Dissertation Chapter 2.2: supply chain attacks can propagate across multiple institutions simultaneously. Only 37% of FE colleges have dedicated cyber staff (Jisc, 2022)."
+    },
+    {
+      "id": "RISK-006",
+      "description": "University research data breach — commercially sensitive IP and clinical trial data",
+      "threat_severity": 5,
+      "resilience_deficit": 2,
+      "safeguarding_impact": 1,
+      "sector": "University",
+      "category": "Data Breach / Insider Threat",
+      "affected_systems": ["Research data repositories", "Clinical trial databases", "Grant systems"],
+      "notes": "DSIT (2024): 97% of universities breached. High threat severity but lower resilience deficit (92% have dedicated cyber staff per Jisc 2022) and minimal direct safeguarding impact. Illustrates SCRPM's frequency-vs-severity distinction from Chapter 4.5."
+    },
+    {
+      "id": "RISK-007",
+      "description": "Denial-of-service attack disrupting school website and parent communication",
+      "threat_severity": 3,
+      "resilience_deficit": 3,
+      "safeguarding_impact": 1,
+      "sector": "Primary School",
+      "category": "Denial of Service",
+      "affected_systems": ["School website", "Parent portal", "Email"],
+      "notes": "Reputational disruption but minimal direct safeguarding risk. Illustrates SCRPM's ability to correctly deprioritise high-visibility but low-safeguarding-impact incidents relative to hidden safeguarding risks."
+    }
   ]
 }
