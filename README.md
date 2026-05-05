@@ -72,7 +72,7 @@ Resilience Deficit and Safeguarding Impact are weighted **above** Threat Severit
 ### Methodology
 - **Type:** BSc (Hons) Information Systems Dissertation — UFCFM5-30-3
 - **University:** University of the West of England (UWE) Bristol · 2025/2026
-- **Author:** Md Onik Mia (Student ID: 25044329)
+- **Author:** Md Onik Mia
 - **Supervisor:** Mark Rhodes
 - **Word Count:** 11,992 words
 - **Framework:** Design Science Research — Hevner et al. (2004)

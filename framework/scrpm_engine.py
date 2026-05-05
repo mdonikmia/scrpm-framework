@@ -1,7 +1,7 @@
 """
 SCRPM Engine — Safeguarding-Centric Risk Priority Matrix
 =========================================================
-Author:     Md Onik Mia (Student ID: 25044329)
+Author:     Md Onik Mia
 Module:     UFCFM5-30-3 Information Systems Dissertation
 University: University of the West of England, Bristol
 Supervisor: Mark Rhodes
