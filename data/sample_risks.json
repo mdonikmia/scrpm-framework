@@ -1,0 +1,12 @@
+{
+  "institution": "Example UK Secondary School",
+  "assessment_date": "2026-01-15",
+  "assessor": "Md Onik Mia",
+  "risks": [
+    {"id": "RISK-001", "description": "Ransomware attack encrypting student welfare records", "safeguarding_impact": 9, "data_sensitivity": 9, "likelihood": 7, "operational_impact": 8, "regulatory_exposure": 9, "category": "Malware", "notes": "Welfare records include DSL safeguarding files"},
+    {"id": "RISK-002", "description": "Phishing email targeting staff - student data exfiltration", "safeguarding_impact": 8, "data_sensitivity": 8, "likelihood": 8, "operational_impact": 5, "regulatory_exposure": 7, "category": "Social Engineering", "notes": "Staff clicked malicious link"},
+    {"id": "RISK-003", "description": "Unauthorised access to student medical and SEND records", "safeguarding_impact": 10, "data_sensitivity": 9, "likelihood": 4, "operational_impact": 3, "regulatory_exposure": 9, "category": "Access Control", "notes": "Former employee retains access"},
+    {"id": "RISK-004", "description": "School website defacement - reputational damage", "safeguarding_impact": 2, "data_sensitivity": 2, "likelihood": 6, "operational_impact": 7, "regulatory_exposure": 3, "category": "Web Security", "notes": "No student data at risk"},
+    {"id": "RISK-005", "description": "MIS system outage - inability to access attendance records", "safeguarding_impact": 4, "data_sensitivity": 5, "likelihood": 5, "operational_impact": 9, "regulatory_exposure": 4, "category": "Availability", "notes": "Safeguarding cross-check not possible during outage"}
+  ]
+}
